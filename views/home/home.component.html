@@ -1,0 +1,22 @@
+
+<div class="card text-center" style="left:46rem;top: 5rem;width:25%;height:100px;">
+    <div class="card-header">  
+    </div>
+    <div class="card-body" >
+      <h5 class="card-title">An Intelligent Buddy Who May Become your Best Friend</h5>
+      <p class="card-text" style="margin-top:2rem">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <label class="btn btn-default">
+        <input type="file" (change)="selectFile($event)">
+      </label>
+      <button class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">Upload</button>
+      <div class="progress" style="width: 20rem; margin: 0em;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [ngStyle]="{'width': progress+'%'}"></div>
+      </div>
+     <h3 [hidden]="vis">This is your notes from the file:</h3> 
+     <p [hidden]="vis">{{file}}</p>
+    </div>
+    <div class="card-footer text-muted">
+      Contact
+    </div>
+  </div>
